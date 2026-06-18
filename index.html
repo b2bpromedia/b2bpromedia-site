@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B2B ProMedia | Performance Casino Traffic</title>
+
+<meta name="description"
+content="Performance-driven casino traffic acquisition. Media buying, traffic arbitrage and qualified FTD generation for online casino operators.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+--bg:#070812;
+--card:#11131f;
+--card2:#171a2b;
+--purple:#8B5CF6;
+--purple2:#A855F7;
+--text:#ffffff;
+--muted:#b7b9ca;
+--border:rgba(255,255,255,.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+overflow-x:hidden;
+}
+
+.container{
+width:min(1200px,90%);
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+backdrop-filter:blur(10px);
+background:rgba(7,8,18,.8);
+border-bottom:1px solid var(--border);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo-small{
+height:42px;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+padding-top:100px;
+padding-bottom:50px;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,var(--purple),transparent 70%);
+opacity:.18;
+top:-100px;
+right:-150px;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero-logo{
+width:100%;
+max-width:450px;
+}
+
+.tag{
+display:inline-block;
+padding:8px 16px;
+background:rgba(139,92,246,.15);
+border:1px solid rgba(139,92,246,.3);
+border-radius:999px;
+margin-bottom:25px;
+color:#d8c5ff;
+}
+
+.hero h1{
+font-size:clamp(42px,6vw,44px);
+line-height:1.05;
+margin-bottom:24px;
+font-weight:900;
+}
+
+.gradient{
+background:linear-gradient(90deg,#fff,#b88cff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:20px;
+color:var(--muted);
+margin-bottom:35px;
+max-width:600px;
+}
+
+.buttons{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-primary{
+background:linear-gradient(90deg,var(--purple),var(--purple2));
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:1px solid var(--border);
+color:white;
+}
+
+.stats{
+padding:50px 0;
+border-top:1px solid var(--border);
+border-bottom:1px solid var(--border);
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+text-align:center;
+}
+
+.stat-number{
+font-size:42px;
+font-weight:800;
+color:var(--purple);
+}
+
+.stat-label{
+color:var(--muted);
+}
+
+.section{
+padding:50px 0;
+}
+
+.section-title{
+font-size:48px;
+text-align:center;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.section-sub{
+text-align:center;
+max-width:700px;
+margin:auto;
+color:var(--muted);
+margin-bottom:70px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:var(--card);
+padding:35px;
+border-radius:22px;
+border:1px solid var(--border);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.card p{
+color:var(--muted);
+}
+
+.process{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.step{
+background:var(--card);
+padding:25px;
+border-radius:18px;
+text-align:center;
+}
+
+.step-number{
+font-size:36px;
+font-weight:800;
+color:var(--purple);
+margin-bottom:10px;
+}
+
+.geo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+}
+
+.geo{
+background:var(--card);
+padding:20px;
+text-align:center;
+border-radius:14px;
+}
+
+.geo img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:8px;
+}
+
+.geo span{
+    display:block;
+    font-weight:600;
+}
+
+.cta{
+background:linear-gradient(135deg,#171a2b,#251642);
+padding:70px;
+border-radius:30px;
+text-align:center;
+}
+
+.cta h2{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.cta p{
+color:var(--muted);
+margin-bottom:30px;
+}
+
+.contact-box{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+font-size:20px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:var(--muted);
+border-top:1px solid var(--border);
+margin-top:50px;
+}
+
+/* CONTACT SECTION */
+
+.contact-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:220px;
+    padding:25px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    text-align:center;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    border-color:#8B5CF6;
+    box-shadow:0 0 30px rgba(139,92,246,.25);
+}
+
+.contact-svg{
+    width:52px;
+    height:52px;
+    display:block;
+    margin:0 auto 15px auto;
+    transition:.3s;
+}
+
+.contact-card:hover .contact-svg{
+    transform:scale(1.15);
+}
+
+.contact-card h3{
+    margin-top:10px;
+    margin-bottom:0;
+    font-size:20px;
+    font-weight:600;
+}
+
+.contact-card span{
+    color:#b7b9ca;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+
+.hero-grid,
+.cards,
+.process,
+.geo-grid,
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero-logo{
+margin:auto;
+}
+
+.nav-links{
+display:none;
+}
+
+.cta{
+padding:40px 25px;
+}
+
+.cta h2{
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<img src="logo.png" class="logo-small" alt="B2B ProMedia">
+
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#process">Process</a>
+<a href="#markets">Markets</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+
+<div>
+
+<div class="tag">
+Influencer Marketing • Casino Acquisition
+</div>
+
+<h1>
+Influencer-Driven Casino Acquisition
+<span class="gradient">That Generates Real FTDs</span>
+</h1>
+
+<p>
+B2B ProMedia connects licensed online casino brands with trusted streamers and content creators who deliver engaged audiences, qualified players and measurable First Time Depositors.
+</p>
+
+<div class="buttons">
+<a href="#contact" class="btn btn-primary">
+Request Partnership
+</a>
+
+<a href="#services" class="btn btn-secondary">
+Explore Services
+</a>
+</div>
+
+</div>
+
+<div style="text-align:center;">
+<img src="logo.png" class="hero-logo" alt="B2B ProMedia">
+</div>
+
+</div>
+</section>
+
+<section class="stats">
+<div class="container">
+
+<div class="stats-grid">
+
+<div>
+<div class="stat-number">FTD</div>
+<div class="stat-label">Focused Campaigns</div>
+</div>
+
+<div>
+<div class="stat-number">24h</div>
+<div class="stat-label">Partner Response</div>
+</div>
+
+<div>
+<div class="stat-number">Multi</div>
+<div class="stat-label">GEO Coverage</div>
+</div>
+
+<div>
+<div class="stat-number">100%</div>
+<div class="stat-label">Performance Driven</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<p class="section-sub">
+Helping casino operators acquire high-value players through influencer partnerships.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+Influencer-Based Casino Promotion
+</h3>
+
+<p>
+We connect casino brands with carefully selected streamers and content creators whose audiences actively engage with online gaming content.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Streamer Partnership Management
+</h3>
+
+<p>
+From creator selection to campaign coordination, we manage the entire partnership process and ensure smooth communication between operators and influencers.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+FTD-Oriented Campaigns
+</h3>
+
+<p>
+Every collaboration is designed around measurable acquisition goals with a focus on generating qualified First Time Depositors and long-term player value.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Influencer Traffic?
+</h2>
+
+<p class="section-sub">
+Streamer audiences trust the creators they follow, making influencer campaigns one of the most effective channels for player acquisition.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>High Engagement</h3>
+<p>
+Live content creates stronger audience interaction than traditional advertising.
+</p>
+</div>
+
+<div class="card">
+<h3>Qualified Players</h3>
+<p>
+Gaming-focused communities naturally attract users interested in casino entertainment.
+</p>
+</div>
+
+<div class="card">
+<h3>Authentic Promotion</h3>
+<p>
+Recommendations from trusted creators often achieve stronger conversion rates than direct advertising.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="section" id="process">
+
+<div class="container">
+
+<h2 class="section-title">
+How It Works
+</h2>
+
+<p class="section-sub">
+A streamlined process built around successful influencer partnerships.
+</p>
+
+<div class="process">
+
+<div class="step">
+<div class="step-number">01</div>
+Casino Brief
+</div>
+
+<div class="step">
+<div class="step-number">02</div>
+Streamer Selection
+</div>
+
+<div class="step">
+<div class="step-number">03</div>
+Campaign Setup
+</div>
+
+<div class="step">
+<div class="step-number">04</div>
+Promotion Launch
+</div>
+
+<div class="step">
+<div class="step-number">05</div>
+FTD Reporting
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Who We Work With
+</h2>
+
+<p class="section-sub">
+We collaborate with licensed operators, affiliate managers and marketing teams looking for scalable acquisition channels.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Online Casinos</h3>
+<p>
+Acquire new players through trusted creator partnerships.
+</p>
+</div>
+
+<div class="card">
+<h3>Affiliate Programs</h3>
+<p>
+Expand reach through influencer-led acquisition campaigns.
+</p>
+</div>
+
+<div class="card">
+<h3>Marketing Teams</h3>
+<p>
+Complement existing acquisition strategies with creator-driven traffic.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="markets">
+
+<div class="container">
+
+<h2 class="section-title">Markets We Target</h2>
+
+<p class="section-sub">
+Focused on regulated and high-potential casino acquisition markets.
+</p>
+
+<div class="geo-grid">
+
+    <div class="geo">
+        <img src="maps/map_pt.svg" alt="Portugal">
+        <span>Portugal</span>
+    </div>
+
+    <div class="geo">
+        <img src="maps/map_se.svg" alt="Sweden">
+        <span>Sweden</span>
+    </div>
+
+    <div class="geo">
+        <img src="maps/map_de.svg" alt="Germany">
+        <span>Germany</span>
+    </div>
+
+    <div class="geo">
+        <img src="maps/map_es.svg" alt="Spain">
+        <span>Spain</span>
+    </div>
+
+    <div class="geo">
+        <img src="maps/map_pl.svg" alt="Poland">
+        <span>Poland</span>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<div class="container">
+
+<div class="cta">
+
+<h2>Let's Connect</h2>
+
+<p>
+Ready to discuss traffic acquisition and FTD growth?
+Choose your preferred communication channel.
+</p>
+
+<div class="contact-icons">
+
+<a href="mailto:b2bpromedia@gmail.com"
+   class="contact-card">
+
+    <img src="icons/email.svg"
+         alt="Email"
+         class="contact-svg">
+
+    <h3>Email</h3>
+
+</a>
+
+<a href="https://t.me/b2bProMedia"
+   target="_blank"
+   class="contact-card">
+
+    <img src="icons/telegram.svg"
+         alt="Telegram"
+         class="contact-svg">
+
+    <h3>Telegram</h3>
+
+</a>
+
+<a href="https://www.instagram.com/b2bpromedia/"
+   target="_blank"
+   class="contact-card">
+
+    <img src="icons/instagram.svg"
+         alt="Instagram"
+         class="contact-svg">
+
+    <h3>Instagram</h3>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>	
+
+<footer>
+© 2025 B2BProMedia. All Rights Reserved.
+</footer>
+
+</body>
+</html>
